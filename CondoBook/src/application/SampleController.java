@@ -11,7 +11,7 @@ import javafx.scene.control.TextField;
 public class SampleController {
 
 	LoadUser load = new LoadUser();
-	LoginManager login = new LoginManager();
+	LoginWindowManager login = new LoginWindowManager();
 	CurrentUser currentUser;
 	String temp="";
 	
