@@ -32,7 +32,7 @@ public class SampleController {
 			if (txtpwd.getText().equals(load.getUser().get(temp))) {
 				CurrentUser.getInstance().setCurrentUser(temp);
 				JOptionPane.showMessageDialog(null, "Login successful.");
-				login.userLogin(event);
+				login.gotoLocation("UserMenu.fxml");
 			} else {
 				JOptionPane.showMessageDialog(null, "Incorrect password.");
 			}
@@ -44,7 +44,7 @@ public class SampleController {
 			if (txtpwd.getText().equals(load.getAdmin().get(temp))) {
 				CurrentUser.getInstance().setCurrentUser(temp);
 				JOptionPane.showMessageDialog(null, "Login successful.");
-				login.adminLogin(event);
+				login.gotoLocation("UserMenu.fxml");
 			} else {
 				JOptionPane.showMessageDialog(null, "Incorrect password.");
 			}

@@ -10,9 +10,11 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public class LoginWindowManager implements WindowManager{
-	@Override
-	public void gotolocation(String fxml) {
+public class LoginWindowManager extends WindowManager{
+	public LoginWindowManager() {
+		super();
+	}
+	public void gotoLocation(String fxml) {
 		try {
 			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource(fxml));
 			Scene scene2 = new Scene(root,650,400);
